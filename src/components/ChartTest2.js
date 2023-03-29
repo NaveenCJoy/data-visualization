@@ -11,46 +11,74 @@ import {
 
 const data = [
   {
-    name: "01/03/2022",
-    Ethereum: 151.33,
-    Bitcoin: 43046.58,
+    name: "23/03",
+    Tether: 1.00818,
+    Solana: 0.951053977,
+    WhiteBIT: 2.6589,
     amt: 2400,
   },
   {
-    name: "28/02/2022",
-    Ethereum: 158.61,
-    Bitcoin: 43178.98,
+    name: "24/02",
+    Tether: 1.00601,
+    Solana: 0.776818991,
+    WhiteBIT: 2.325889,
     amt: 2210,
   },
   {
-    name: "27/02/2022",
-    Ethereum: 156.97,
-    Bitcoin: 37712.68,
+    name: "25/02",
+    Tether: 0.750899,
+    Solana: 0.882507026,
+    WhiteBIT: 2.825889,
     amt: 2290,
   },
   {
-    name: "26/02/2022",
-    Ethereum: 160.21,
-    Bitcoin: 39146.66,
+    name: "26/02",
+    Tether: 1.01247,
+    Solana: 0.777831972,
+    WhiteBIT: 2.525889,
     amt: 2000,
   },
   {
-    name: "25/02/2022",
-    Ethereum: 158.29,
-    Bitcoin: 39231.64,
+    name: "27/02",
+    Tether: 0.899595,
+    Solana: 0.661925018,
+    WhiteBIT: 2.225889,
     amt: 2181,
   },
   {
-    name: "24/02/2022",
-    Ethereum: 158.26,
-    Bitcoin: 38376.88,
+    name: "28/02",
+    Tether: 1.00683,
+    Solana: 0.64665103,
+    WhiteBIT: 2.625889,
     amt: 2500,
   },
   {
-    name: "23/02/2022",
-    Ethereum: 157.94,
-    Bitcoin: 37274.18,
+    name: "01/03",
+    Tether: 1.00318,
+    Solana: 0.690815985,
+    WhiteBIT: 2.69289,
     amt: 2100,
+  },
+  {
+    name: "02/03",
+    Tether: 0.899595,
+    Solana: 0.661925018,
+    WhiteBIT: 2.225889,
+    amt: 2181,
+  },
+  {
+    name: "03/03",
+    Tether: 1.00601,
+    Solana: 0.776818991,
+    WhiteBIT: 2.325889,
+    amt: 2210,
+  },
+  {
+    name: "04/03",
+    Tether: 1.00683,
+    Solana: 0.64665103,
+    WhiteBIT: 2.225889,
+    amt: 2500,
   },
 ];
 
@@ -74,11 +102,12 @@ const ChartTest2 = () => {
       <Legend />
       <Line
         type="monotone"
-        dataKey="Bitcoin"
+        dataKey="Solana"
         stroke="#8884d8"
         activeDot={{ r: 8 }}
       />
-      <Line type="monotone" dataKey="Ethereum" stroke="#82ca9d" />
+      <Line type="monotone" dataKey="Tether" stroke="#f70505" />
+      <Line type="monotone" dataKey="WhiteBIT" stroke="#82ca9d" />
     </LineChart>
   );
 };
